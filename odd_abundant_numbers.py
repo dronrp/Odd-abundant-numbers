@@ -9,7 +9,6 @@ def numberDivisors(n):
                 divisors.append(i)
             else:
                 divisors.extend([i,n//i])
-
         i+=2
     return sum(divisors)
 
@@ -18,7 +17,6 @@ def oddAbundantNumbers():
     for i in range(9, 100000, 2):
         if i < numberDivisors(i):
             ans.append(i)
-
     print(ans)
 
 if __name__ == "__main__":
